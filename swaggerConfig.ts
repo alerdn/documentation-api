@@ -1,8 +1,8 @@
-import swaggerJSDoc from "swagger-jsdoc";
+const swaggerJSDoc = require("swagger-jsdoc");
 const { writeFileSync } = require("fs");
 const { resolve } = require("path");
 
-const options: swaggerJSDoc.Options = {
+const options = {
   definition: {
     openapi: "3.0.0",
     info: {
