@@ -4,12 +4,56 @@
     "title": "Minha API AdonisJS",
     "version": "1.0.0"
   },
-  "paths": {},
-  "components": {},
+  "paths": {
+    "/users": {
+      "get": {
+        "summary": "Retorna a lista de usuários",
+        "tags": [
+          "Users"
+        ],
+        "responses": {
+          "200": {
+            "description": "Lista de usuários",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/User"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "User": {
+        "type": "object",
+        "required": [
+          "id",
+          "name"
+        ],
+        "properties": {
+          "id": {
+            "type": "integer",
+            "description": "O ID do usuário"
+          },
+          "name": {
+            "type": "string",
+            "description": "O nome do usuário"
+          }
+        }
+      }
+    }
+  },
   "tags": [
     {
-      "name": "Clientes",
-      "description": "Operações relacionadas a clientes"
+      "name": "Users",
+      "description": "Operações relacionadas a usuários"
     }
   ]
 }
