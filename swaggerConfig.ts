@@ -9,7 +9,6 @@ const options = {
       title: "Documentation API",
       version: "1.0.0",
     },
-    basePath: "https://localhost:3333",
   },
   apis: ["./app/**/*.ts"], // Caminho para os arquivos que contêm anotações JSDoc
 };
