@@ -1,14 +1,15 @@
-const swaggerJSDoc = require("swagger-jsdoc");
+import swaggerJSDoc from "swagger-jsdoc";
 const { writeFileSync } = require("fs");
 const { resolve } = require("path");
 
-const options = {
+const options: swaggerJSDoc.Options = {
   definition: {
     openapi: "3.0.0",
     info: {
       title: "Documentation API",
       version: "1.0.0",
     },
+    basePath: "https://localhost:3333",
   },
   apis: ["./app/**/*.ts"], // Caminho para os arquivos que contêm anotações JSDoc
 };

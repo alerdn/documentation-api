@@ -5,8 +5,8 @@ export default class ClientesController {
   /**
    * @swagger
    * /clientes:  
-   *   get:  
-   *     summary: Retorna a lista de clientes
+   *    post:
+   *     description: Cadastra um usuário
    */
   public async store({ request }: HttpContextContract) {
     try {
