@@ -6,7 +6,7 @@ const options = {
   definition: {
     openapi: "3.0.0",
     info: {
-      title: "Minha API AdonisJS",
+      title: "Documentation API",
       version: "1.0.0",
     },
   },
