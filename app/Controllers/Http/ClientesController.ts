@@ -7,8 +7,9 @@ export default class ClientesController {
    * /clientes:  
    *    post:
    *     description: Cadastra um usuário
-   *    responses:
-   *        201:
+   * 
+   *     responses:
+   *         201:
    *            description: Created
    */
   public async store({ request }: HttpContextContract) {

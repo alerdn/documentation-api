@@ -8,11 +8,11 @@
   "paths": {
     "/clientes": {
       "post": {
-        "description": "Cadastra um usuário"
-      },
-      "responses": {
-        "201": {
-          "description": "Created"
+        "description": "Cadastra um usuário",
+        "responses": {
+          "201": {
+            "description": "Created"
+          }
         }
       }
     }
