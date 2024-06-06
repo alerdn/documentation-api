@@ -4,7 +4,6 @@
     "title": "Documentation API",
     "version": "1.0.0"
   },
-  "basePath": "https://localhost:3333",
   "paths": {
     "/clientes": {
       "post": {
